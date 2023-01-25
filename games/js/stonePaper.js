@@ -44,8 +44,8 @@ function makeSelection(yourSelection) {
 
     addSelectionResult(computerSelection, computerWon)
     addSelectionResult(yourSelection, youWon)
-    incrementScore(youWon?yourScore:computerScore)
-    incrementScore(youWon?yourScore:computerScore)
+    if(youWon) incrementScore(yourScore)
+    if(computerWon) incrementScore(computerScore)
 
 
 }
