@@ -1,0 +1,56 @@
+@import "/css/main.css";
+
+.paddle {
+    --position: 50;
+    position: absolute;
+    height: 10vh;
+    width: 1vh;
+    background-color: var(--foreground-color);
+    top: calc(var(--position)*1vh);
+    transform: translateY(-50%);
+}
+
+.left {
+    left: 1vw;
+}
+
+.right {
+    right: 1vw;
+}
+
+.ball {
+    --x: 50;
+    --y: 50;
+
+    position: absolute;
+    height: 2vh;
+    width: 2vh;
+    border-radius: 50%;
+    background-color: var(--foreground-color);
+    top: calc(var(--x)*1vh);
+    left: calc(var(--y)*1vw);
+    transform: translate(-50%, -50%);
+}
+
+.score {
+    display: flex;
+    justify-content: center;
+    font-size: 5vh;
+    font-weight: bold;
+    font-family: 'Courier New', Courier, monospace;
+    color: var(--foreground-color);
+    
+}
+
+.score>* {
+    flex-grow: 1;
+    flex-basis: 0;
+    padding: 0 3vh;
+    margin: 1vh 0;
+    opacity: .5;
+}
+
+.score > :first-child {
+    text-align: right;
+    /* border-right: .5vh solid var(--foreground-color); */
+}
