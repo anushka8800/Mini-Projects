@@ -1,0 +1,68 @@
+*, *::after, *::before {
+    box-sizing: border-box;
+    
+}
+
+:root {
+    --hue: 165;
+    --saturation: 50%;
+    --foreground-color: hsl(var(--hue), var(--saturation), 80%);
+    --background-color: hsl(var(--hue), var(--saturation), 20%);
+    --light-foreground: linear-gradient(145deg, hsl(var(--hue), var(--saturation), 22%), hsl(var(--hue), var(--saturation), 27%));
+    --hover-color: hsl(var(--hue), var(--saturation), 28%);
+}
+
+body {
+    background-color: var(--background-color);
+    color: rgb(207, 207, 207);
+    margin: 0;
+    padding: 0;
+    font-family: 'Courier New', Courier, monospace;
+
+}
+
+.container {
+    margin: 20vh auto;
+    width: 70vw;
+    
+    display: grid;
+    padding: 2vw 0;
+    grid-template-columns: 30vw 30vw;
+    justify-items: center;
+    justify-content: center;
+    /* align-items: center; */
+    /* grid-gap: 1px; */
+    gap: 20px;
+    
+    
+}
+
+.container>* {
+    background: var(--light-foreground);
+    height: 100%;
+    width: 100%;
+    font-size: 1.6rem;
+    font-family:monospace;
+    font-weight: bolder;
+    color: var(--foreground-color);
+    padding: 1em 0;
+    text-align: center;
+    border: 1px solid rgba(0,0,0,0);
+}
+
+.container>*:hover {
+    border-bottom: 1px solid rgba(245, 245, 245, 0.432);
+    
+}
+
+.container>:first-child {
+    grid-column:span 2;
+    background: none;
+    border: none;
+}
+
+a{  
+    text-decoration: none;
+    color: currentColor;
+}
+

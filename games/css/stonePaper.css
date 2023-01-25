@@ -1,0 +1,53 @@
+@import "/css/main.css";
+
+body {
+    scroll-behavior: none;
+}
+
+.selections {
+    display: flex;
+    justify-content: center;
+}
+
+.selection {
+    font-size: 5em;
+    background: none;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    margin: 1em .7em;
+    transition: 100ms;
+}
+
+.selection:hover {
+    transform: scale(1.2);
+    
+}
+
+.results {
+    
+    font-size: 3em;
+    font-weight: bold;
+    color: var(--foreground-color);
+    display: grid;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    grid-template-columns: repeat(2, 10em);
+    grid-auto-rows: 6rem;
+    
+}
+
+.result-score {
+    font-size: 2rem;
+    margin: 0 1.2rem;
+}
+
+.result-selection {
+    opacity: .6;
+}
+
+.result-selection.winner {
+    opacity: 1;
+    font-size: 4rem;
+}
