@@ -17,16 +17,16 @@ body {
     color: rgb(207, 207, 207);
     margin: 0;
     padding: 0;
-    font-family: 'Courier New', Courier, monospace;
+    font-family: 'Space Mono', monospace;
 
 }
 
 .container {
-    margin: 20vh auto;
+    margin: 10vh auto;
     width: 70vw;
     
     display: grid;
-    padding: 2vw 0;
+    /* padding: 2vw 0; */
     grid-template-columns: 30vw 30vw;
     justify-items: center;
     justify-content: center;
@@ -42,10 +42,10 @@ body {
     height: 100%;
     width: 100%;
     font-size: 1.6rem;
-    font-family:monospace;
+    font-family:'Space Mono', monospace;
     font-weight: bolder;
     color: var(--foreground-color);
-    padding: 1em 0;
+    padding: 1em .6em;
     text-align: center;
     border: 1px solid rgba(0,0,0,0);
 }
@@ -66,3 +66,6 @@ a{
     color: currentColor;
 }
 
+.jumble {
+    font-size: 3rem;
+}
