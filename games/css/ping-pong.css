@@ -1,5 +1,10 @@
 @import "../../css/main.css";
 
+
+body {
+    overflow: hidden;
+}
+
 .paddle {
     --position: 50;
     position: absolute;
